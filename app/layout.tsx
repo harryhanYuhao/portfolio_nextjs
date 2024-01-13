@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 import Navbar from "./components/Navbar";
 import { monserrat } from "./ui/fonts";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Create Next App",
