@@ -17,10 +17,11 @@ export default function Home() {
             Haec Data Poena Diu Discentibus
           </h1>
           <h2 className="text-center text-2xl font-medium leading-[3rem]">
-            This penalty is only given to those who is learning more.
+            This penalty is given to those who is learning more.
             <br />
             <span className="text-xl">
-              &mdash; <i>The Antiquary</i>, W. Scott, Edinburgh, 1816 </span>
+              &mdash; <i>Satire,</i> 2c. Juvenal (note)
+            </span>
           </h2>
         </div>
       </div>
