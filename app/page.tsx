@@ -14,15 +14,16 @@ export default function Home() {
             height={600}
           />
         </div>
-        <div className="w-full lg:w-[50%] px-12 lg:px-6 lg:flex-row">
-          <h1 className="text-center text-5xl md:text-7xl font-bold leading-[3rem] md:leading-[5rem]">
-            Haec Data Poena Diu Discentibus
+        <div className="w-full lg:w-[50%] px-20 lg:px-6 lg:flex-row">
+          <h1 className="text-center text-2xl md:text-5xl hyphens-auto font-bold leading-[2rem] md:leading-[4rem]">
+            Omnes enim trahimur et ducimur ad cognitionis et scientiae cupiditatem ...
           </h1>
           <h2 className="text-center text-xl pt-2 md:pt-6 md:text-2xl font-medium leading-7 md:leading-[2rem]">
-            This penalty is given to those who learns more.
+            All (human) thus are drawn and led to the desire for knowledge and science ... All of
+            our mental strength will be turned ... to their pursuit.
             <br />
             <span className="text-base md:text-xl">
-              &mdash; <i>Satires,</i> 2 c. Juvenal (note)
+              &mdash; <i>On Moral Responsibility, </i> Cicero
             </span>
           </h2>
         </div>
