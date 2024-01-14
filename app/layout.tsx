@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import { monserrat } from "./ui/fonts";
 import "./globals.css";
 
@@ -15,10 +16,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className={`${monserrat.className}`}>
         <>
-          <div>
-            <Navbar />
-          </div>
-          <div>{children}</div>
+          <Navbar />
+          <div className="min-h-screen flex items-center justify-center">{children}</div>
+          <Footer />
         </>
       </body>
     </html>

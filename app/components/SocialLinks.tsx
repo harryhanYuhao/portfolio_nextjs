@@ -12,7 +12,7 @@ const socialLinks = [
   {
     title: "Github",
     href: "https://github.com/harryhanYuhao",
-    icon: <GithubIcon size="1.5em" />,
+    icon: <GithubIcon size="2em" />,
   },
   {
     title: "Linkedin",
@@ -22,12 +22,12 @@ const socialLinks = [
   {
     title: "Wechat",
     href: "/wechat",
-    icon: <WechatIcon size="1.5em" color="#09B83E" />,
+    icon: <WechatIcon size="2em" color="#09B83E" />,
   },
   {
     title: "Mail",
     href: "mailto:harryhan912@gmail.com",
-    icon: <MailIcon size="1.5em" />,
+    icon: <MailIcon size="2em" />,
   }
 ];
 
@@ -36,7 +36,7 @@ export default function SocialLinks() {
     return (
       <Link key={nav.title} href={nav.href} className={` relative group`}>
         <motion.div 
-          whileHover={{ scale: 1.1 }}
+          whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.9 }}
           className="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 dark:bg-gray-800"
         >

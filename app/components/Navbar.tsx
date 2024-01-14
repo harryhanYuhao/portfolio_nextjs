@@ -17,10 +17,10 @@ const navigations = [
     title: "About",
     href: "/about",
   },
-  {
-    title: "Contact",
-    href: "/contact",
-  },
+  // {
+  //   title: "Contact",
+  //   href: "/contact",
+  // },
   {
     title: "Projects",
     href: "/projects",
@@ -29,29 +29,6 @@ const navigations = [
     title: "Blog",
     href: "/blog",
   },
-];
-
-const socialLinks = [
-  // {
-  //   title: "X",
-  //   href: "https://twitter.com/iamjideguru",
-  //   icon: <XIcon />,
-  // },
-  {
-    title: "Github",
-    href: "https://github.com/harryhanYuhao",
-    icon: <GithubIcon size="1.5em"/>,
-  },
-  {
-    title: "Linkedin",
-    href: "https://www.linkedin.com/in/yuhao-han-357457184",
-    icon: <LinkedinIcon />
-  },
-  {
-    title: "Wechat",
-    href: "/wechat",
-    icon: <WechatIcon size ="1.5em" color="#09B83E"/>,
-  }
 ];
 
 const Navbar = () => {
@@ -63,10 +40,10 @@ const Navbar = () => {
       </div>
       {/* left nav: navigation links */}
       <div className="flex-none p-6 lg:w-[50%] lg:pl-[3%] lg:pr-[7%]">
-        <div className="hidden lg:flex justify-around">
+        <div className="hidden lg:flex justify-around xl:pr-30 xl:pl-10">
           {navigations.map((nav) => {
             return (
-              <Link key={nav.title} href={nav.href} className={` relative group`}>
+              <Link key={nav.title} href={nav.href} className={` relative group text-xl`}>
                 {nav.title}
                 {/*this is underline animation*/}
                 <span
@@ -83,8 +60,8 @@ const Navbar = () => {
           })}
         </div>
       </div>
-      <div className="flex-none p-6 w-[30%] lg:w-[50%] lg:pl-[7%] lg:pr-[3%]">
-        <div className="flex justify-around items-center">
+      <div className="flex-none p-6 w-[50%] lg:w-[50%] lg:pl-[7%] lg:pr-[3%]">
+        <div className="flex justify-around items-center pl-30 xl:pl-30 xl:pr-10">
           <SocialLinks />
         </div>
       </div>
