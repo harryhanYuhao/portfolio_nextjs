@@ -3,10 +3,12 @@ import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
+import { motion } from "framer-motion";
 
 import Logo from "../ui/Logo";
-import { WechatIcon, LinkedinIcon, GithubIcon } from "@/app/ui/icons";
+import { WechatIcon, LinkedinIcon, GithubIcon, BarIcon, CrossIcon } from "@/app/ui/icons";
 import SocialLinks from "./SocialLinks";
+import Menu from "../ui/Menu";
 
 const navigations = [
   {
@@ -32,14 +34,25 @@ const navigations = [
 ];
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const pathname = usePathname();
   return (
     <div className="flex lg:justify-center pt-2 items-center">
-      <div className="pl-[25%] lg:pl-0 lg:absolute lg:left-[50%] lg:translate-x-[-50%]">
-        <Logo />
+      <div className=" pl-0 max-lg:w-[25%] lg:absolute lg:left-[50%] lg:translate-x-[-50%]">
+        <motion.div
+          className="rounded-full"
+          whileHover={{
+            scale: 1.15,
+          }}
+          whileTap={{
+            scale: 0.9,
+          }}
+        >
+          <Logo />
+        </motion.div>
       </div>
       {/* left nav: navigation links */}
-      <div className="flex-none p-6 lg:w-[50%] lg:pl-[3%] lg:pr-[7%]">
+      <div className="max-lg:w-[25%] max-lg:order-first lg:flex-none lg:p-6 lg:w-[50%] lg:pl-[3%] lg:pr-[7%]">
         <div className="hidden lg:flex justify-around xl:pr-30 xl:pl-10">
           {navigations.map((nav) => {
             return (
@@ -58,6 +71,17 @@ const Navbar = () => {
               </Link>
             );
           })}
+        </div>
+        <div className="lg:hidden flex justify-center items-center relative">
+          <button className="z-10"
+            onClick={() => {
+              setIsMenuOpen(!isMenuOpen);
+            }}
+          >
+            {!isMenuOpen && <BarIcon className="size-7"></BarIcon>}
+            {isMenuOpen && <CrossIcon className="size-7"></CrossIcon>}
+          </button>
+          {isMenuOpen && <Menu className="z-0 absolute top-8" links={navigations} onClick={()=>setIsMenuOpen(false)}/>}
         </div>
       </div>
       <div className="flex-none p-6 w-[50%] lg:w-[50%] lg:pl-[7%] lg:pr-[3%]">

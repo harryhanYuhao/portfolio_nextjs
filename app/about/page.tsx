@@ -15,11 +15,20 @@ const page = () => {
   return (
     <div className="flex-row justify-center items-center w-full">
       <Title>
-        Hi, I am <span className="text-blue-500">Harry</span>
+        Welcome to my Portfolio
       </Title>
       <div className="flex-none">
         <div className="max-lg:flex-col lg:flex items-center justify-around pt-20">
-          <div className="flex-col lg:w-[50%] px-[10%] lg:px-[5%]">
+          <div className=" order-last pt-10 lg:pt-0 w-full lg:w-[50%] lg:px-6 flex justify-center">
+            <Image
+              className="h-auto  w-[50%] lg:w-[100%] max-lg:pb-10"
+              src={profile}
+              alt="profile"
+              width={600}
+              height={600}
+            />
+          </div>
+          <div className="flex-col  lg:w-[50%] px-[10%] lg:px-[5%]">
             <h2 className="text-3xl text-center uppercase"> Biography</h2>
             <p className="text-center text-lg pt-5 font-medium hyphens-auto">
               {/* {content.bio} */}
@@ -28,15 +37,6 @@ const page = () => {
               the University of Edinburgh pursuing the degree Master of Mathematics. Beside math, I
               spent quite some time on computer science.
             </p>
-          </div>
-          <div className="pt-10 lg:pt-0 lg:w-[50%] lg:px-6 flex justify-center relative">
-            <Image
-              className="h-auto  items-center"
-              src={profile}
-              alt="profile"
-              width={600}
-              height={600}
-            />
           </div>
         </div>
       </div>

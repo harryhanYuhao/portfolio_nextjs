@@ -2,6 +2,8 @@ export { FaGithub as GithubIcon } from "react-icons/fa";
 export { FaXTwitter as XIcon } from "react-icons/fa6";
 export { IoLogoWechat as WechatIcon } from "react-icons/io5";
 export { MdEmail as MailIcon } from "react-icons/md";
+export { FaBars as BarIcon } from "react-icons/fa";
+export { ImCross as CrossIcon } from "react-icons/im";
 
 export const LinkedinIcon = (props: any) => (
   <svg

@@ -21,7 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={`${monserrat.className}`}>
         <>
           <Navbar />
-          <div className="min-h-screen flex items-center justify-center">{children}</div>
+          <div className="pt-[5vh] min-h-[85vh] flex items-start justify-start">{children}</div>
           <Footer />
         </>
       </body>
