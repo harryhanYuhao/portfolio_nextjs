@@ -20,6 +20,8 @@ const page = () => {
             Hi, I am <b>Harry Han</b>. I was born in Changzhou, China, attended Hamden Hall Country
             Day School in Connecticut, USA, and I am currently an undergraduate student at the
             University of Edinburgh pursuing the degree Master of Mathematics.
+            <br />
+            Beside math, I spent quite some time on computer science.
           </p>
         </div>
         <div className="w-full  lg:px-6 flex justify-center relative">
