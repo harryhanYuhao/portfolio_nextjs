@@ -21,9 +21,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className={`${monserrat.className}`}>
         <Navbar />
-        <div className="pt-[5vh] min-h-[100vh] pb-[5vh] flex items-start justify-start">{children}</div>
+        <div className="pt-[5vh] min-h-[100vh] pb-[5vh] flex items-start justify-start">
+          {children}
+        </div>
         <Footer />
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
