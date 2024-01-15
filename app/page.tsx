@@ -4,7 +4,7 @@ import background from "../public/background.png";
 export default function Home() {
   return (
     <main>
-      <div className="flex-row lg:flex lg:items-center lg:justify-center pb-[5vh]">
+      <div className="flex-row lg:flex lg:items-center lg:justify-center pb-[5vh] lg:px-[5vh] ">
         <div className="w-full lg:w-[50%] lg:px-6 flex justify-center relative">
           <Image
             className="h-auto w-[60%] lg:w-[100%] items-center"
