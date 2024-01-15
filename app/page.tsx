@@ -14,7 +14,7 @@ export default function Home() {
             height={600}
           />
         </div>
-        <div className="w-full lg:w-[50%] px-20 lg:px-6 lg:flex-row">
+        <div className="w-full lg:w-[50%] px-[5vh] lg:px-6 lg:flex-row">
           <h1 className="text-center text-3xl md:text-5xl hyphens-auto font-bold leading-[2rem] md:leading-[4rem]">
             Omnes enim trahimur et ducimur ad cognitionis et scientiae cupiditatem ...
           </h1>
