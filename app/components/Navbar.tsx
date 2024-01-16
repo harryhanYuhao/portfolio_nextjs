@@ -6,7 +6,7 @@ import clsx from "clsx";
 import { motion } from "framer-motion";
 
 import Logo from "../ui/Logo";
-import { WechatIcon, LinkedinIcon, GithubIcon, BarIcon, CrossIcon } from "@/app/ui/icons";
+import { BarIcon, CrossIcon } from "@/app/ui/icons";
 import SocialLinks from "./SocialLinks";
 import Menu from "../ui/Menu";
 
