@@ -23,7 +23,7 @@ export default function Home() {
             our mental strength will be turned ... to their pursuit.
             <br />
             <span className="text-base md:text-xl">
-              &mdash; <i><a href="https://en.wikipedia.org/wiki/De_Officiis" className="underline decoration-dotted">On Moral Responsibility</a>, </i> Cicero
+              &mdash; <i><a href="https://en.wikipedia.org/wiki/De_Officiis" className="underline decoration-dotted">On Moral Responsibilities</a>, </i> Cicero
             </span>
           </h2>
         </div>

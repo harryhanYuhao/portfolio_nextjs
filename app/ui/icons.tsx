@@ -45,6 +45,7 @@ export const FullHeartIcon = (props: any) => (
   </svg>
 );
 
+// NOTE: WORTH PUBLSIHING
 export const AnimatedHeartIcon = ({ className, size }: { className?: string; size?: string }) => {
   const [heartful, setHeartful] = useState(true);
   return (
@@ -72,7 +73,7 @@ export const AnimatedHeartIcon = ({ className, size }: { className?: string; siz
         <path
           id="inside"
           fill="#F5067C"
-          className={`${heartful ? "opacity-100" : "opacity-0"} duration-300`}
+          className={`${heartful ? "opacity-100" : "opacity-0"} duration-500`}
           fillRule="evenodd"
           d="m5.887 34.142 2.829 2.829L37 65.255 65.284 36.97l2.829-2.829c7.81-7.81 7.81-20.474 0-28.284-7.81-7.81-20.474-7.81-28.285 0L37 8.686l-2.828-2.828c-7.81-7.81-20.474-7.81-28.285 0-7.81 7.81-7.81 20.474 0 28.284Z"
           clipRule="evenodd"

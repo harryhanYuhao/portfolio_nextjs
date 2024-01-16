@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <footer className="w-full border-t-2 border-solid border-dark">
       <div className="flex py-8 items-center justify-around font-medium">
-        <Link href="/about">
+        <Link href="/bio">
           <TextUnderLineAnimation text="Harry's Portfolio" />
         </Link>
         <span className="hidden md:block">
