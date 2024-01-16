@@ -8,7 +8,7 @@ import profile from "/public/profile.png";
 import content from "./content";
 
 export const metadata: Metadata = {
-  title: "About",
+  title: "Bio",
 };
 
 const page = () => {

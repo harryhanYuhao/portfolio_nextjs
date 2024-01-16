@@ -12,12 +12,12 @@ import Menu from "../ui/Menu";
 
 const navigations = [
   {
-    title: "Home",
+    title: "Harry's Portfolio",
     href: "/",
   },
   {
-    title: "About",
-    href: "/about",
+    title: "Bio",
+    href: "/bio",
   },
   // {
   //   title: "Contact",

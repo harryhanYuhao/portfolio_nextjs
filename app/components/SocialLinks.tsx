@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-import { WechatIcon, LinkedinIcon, GithubIcon, MailIcon } from "@/app/ui/icons";
+import { LinkedinIcon, GithubIcon, MailIcon, XIcon } from "@/app/ui/icons";
 
 const socialLinks = [
   // {
@@ -20,29 +20,29 @@ const socialLinks = [
     icon: <LinkedinIcon />,
   },
   {
-    title: "Wechat",
-    href: "/wechat",
-    icon: <WechatIcon size="2em" color="#09B83E" />,
+    title: "X",
+    href: "https://twitter.com/han_yuhao",
+    icon: <XIcon size="2em" />,
   },
   {
     title: "Mail",
-    href: "mailto:harryhan912@gmail.com",
+    href: "mailto:y.han@yetin.net",
     icon: <MailIcon size="2em" />,
-  }
+  },
 ];
 
 export default function SocialLinks() {
   return socialLinks.map((nav: any) => {
     return (
-      <Link key={nav.title} href={nav.href} className={` relative group`}>
-        <motion.div 
+      <a key={nav.title} href={nav.href} className={` relative group`} target="_blank">
+        <motion.div
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.9 }}
-          className="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 dark:bg-gray-800"
+          className="w-8 h-8 flex items-center justify-center rounded-full"
         >
-        {nav.icon}
+          {nav.icon}
         </motion.div>
-      </Link>
+      </a>
     );
   });
 }
