@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
+import GoogleAnalytics from "./components/GoogleAnalytics";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { monserrat } from "./ui/fonts";
 import "./globals.css";
+
 
 export const metadata: Metadata = {
   title: {
@@ -27,6 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer />
         <Analytics />
         <SpeedInsights />
+        <GoogleAnalytics token={`${process.env.GOOGLE_ANALYTICS_TOKEN}`}/>
       </body>
     </html>
   );
