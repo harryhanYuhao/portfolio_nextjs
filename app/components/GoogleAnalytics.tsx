@@ -8,7 +8,7 @@ const GoogleAnalytics = ({token}: {token: string}) => {
         src={`https://www.googletagmanager.com/gtag/js?id=${token}`}
       />
 
-      <Script strategy="lazyOnload">
+      <Script strategy="lazyOnload" id="GoogleAnalytic">
         {`
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}
