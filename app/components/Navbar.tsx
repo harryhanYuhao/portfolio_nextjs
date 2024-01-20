@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import Link from "next/link";
 import { useState } from "react";
@@ -38,13 +39,16 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isNavBarFixed, setIsNavBarFixed] = useState(false);
   const changeNavBarFixed = () => {
+    if (typeof window === "undefined") return;
     if (window.scrollY > 0) {
       setIsNavBarFixed(true);
     } else {
       setIsNavBarFixed(false);
     }
   };
-  window.addEventListener("scroll", changeNavBarFixed);
+  if (typeof window !== "undefined") {
+    window.addEventListener("scroll", changeNavBarFixed);
+  }
 
   const pathname = usePathname();
   return (
