@@ -26,8 +26,8 @@ const navigations = [
   //   href: "/contact",
   // },
   {
-    title: "Projects",
-    href: "/projects",
+    title: "Works",
+    href: "/works",
   },
   {
     title: "Blog",

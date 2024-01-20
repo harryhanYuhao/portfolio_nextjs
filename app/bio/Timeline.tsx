@@ -1,8 +1,7 @@
 "use client";
 import React from "react";
-import content from "./content";
 
-export default function Timeline() {
+export default function Timeline({content}: {content: Array<object>}) {
   return content.map((item: any, index: any) => (
     <>
       <div key={index} className="hidden lg:flex flex-col justify-center items-center w-full py-5">
@@ -10,7 +9,7 @@ export default function Timeline() {
           <div className="flex justify-between items-center">
             <span className="text-3xl font-semibold">
               {item.titleLink ? (
-                <a className="underline decoration-dotted" href={item.titleLink} target="_blank">
+                <a className="" href={item.titleLink} target="_blank">
                   {item.title}
                 </a>
               ) : (
@@ -30,7 +29,7 @@ export default function Timeline() {
           <div className="flex justify-between items-center">
             <span className="text-3xl font-semibold">
               {item.titleLink ? (
-                <a className="underline decoration-dotted" href={item.titleLink} target="_blank">
+                <a className="" href={item.titleLink} target="_blank">
                   {item.title}
                 </a>
               ) : (

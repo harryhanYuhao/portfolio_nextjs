@@ -53,7 +53,7 @@ const page = () => {
         <h2 className="hyphens-auto text-[clamp(25px,4vw,80px)] text-center uppercase py-6">
           Biography
         </h2>
-        <Timeline />
+        <Timeline content={content}/>
       </div>
     </div>
   );
