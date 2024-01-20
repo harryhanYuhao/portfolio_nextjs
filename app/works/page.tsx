@@ -6,6 +6,7 @@ const page = () => {
     <div className="flex flex-col items-center justify-center w-[100vw]">
       {contents.map((content, index) => (
         <ExpandableBox
+          key={index}
           title={content.title}
           subtitle={content.subtitle}
           link={content.link}

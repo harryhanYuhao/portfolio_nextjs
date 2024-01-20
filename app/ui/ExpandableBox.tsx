@@ -21,6 +21,7 @@ const ExpandableBox = ({
   const [isExpanded, setIsExpanded] = useState(false);
   return (
     <button
+      key={title}
       className={`${className} border-dark border-2 rounded-md p-2 flex flex-col w-[50%] my-2 transition ease-in-out hover:h-[10vh]`}
       onClick={() => {
         setIsExpanded(!isExpanded);
@@ -35,9 +36,6 @@ const ExpandableBox = ({
       <div className={`${isExpanded ? "max-h-0" : "max-h-96"} overflow-hidden`}>
         <div className="flex flex-col">
           <div className="flex justify-center">{description}</div>
-          <div className="flex justify-center">
-            <img src={img} className="w-[50%] h-auto" />
-          </div>
         </div>
       </div>
     </button>

@@ -1,4 +1,4 @@
-export default [
+const content = [
   {
     title: 'aformatter',
     link: 'https://github.com/harryhanYuhao/aformatter',
@@ -16,4 +16,6 @@ export default [
     img: undefined,
   }
 ]
+
+export default content;
 
