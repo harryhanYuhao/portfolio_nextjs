@@ -1,3 +1,5 @@
+// at the time of writing the stable version of next.js has bug with google analytics
+// when the bug is fixed, google analytics is available in next/third-parties directory
 import Script from "next/script";
 
 const GoogleAnalytics = ({token}: {token: string}) => {

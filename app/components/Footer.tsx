@@ -1,15 +1,12 @@
 "use client";
 import React from "react";
-import { useState } from "react";
 import Link from "next/link";
 
 // import { EmptyHeartIcon } from "@/app/ui/icons";
-import { FullHeartIcon } from "@/app/ui/icons";
 import { AnimatedHeartIcon } from "@/app/ui/icons";
 import TextUnderLineAnimation from "../ui/TextUnderLineAnimation";
 
 const Footer = () => {
-  const [heartfull, setHeartfull] = useState(false);
   return (
     <footer className="w-full border-t-2 border-solid border-dark">
       <div className="flex py-8 items-center justify-around font-medium">
@@ -25,6 +22,7 @@ const Footer = () => {
           <span className="hidden md:block">, Next.js, TailwindCSS, and Vercel</span>
         </div>
       </div>
+      <p className="text-center bg-[rgba(200,200,180,1)] font-bold [font-size:clamp(1rem,2vw,4rem)] text-black py-[2vh]">This Site is Under Active Construction </p>
     </footer>
   );
 };
