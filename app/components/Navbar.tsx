@@ -54,7 +54,7 @@ const Navbar = () => {
   return (
     <div
       className={`flex lg:justify-center items-center sticky top-0 transition-all z-50 ${
-        isNavBarFixed ? "mb-[16px] bg-gray-300 h-[72px]" : "pt-[16px] h-[96px]"
+        isNavBarFixed ? "mb-[16px] bg-background2 h-[72px]" : "pt-[16px] h-[96px]"
       }`}
     >
       {/* left nav: navigation links */}

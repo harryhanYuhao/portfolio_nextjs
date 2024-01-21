@@ -8,7 +8,7 @@ import TextUnderLineAnimation from "../ui/TextUnderLineAnimation";
 
 const Footer = () => {
   return (
-    <footer className="w-full border-t-2 border-solid border-dark">
+    <footer className="w-full border-t-2 border-solid ">
       <div className="flex py-8 items-center justify-around font-medium">
         <Link href="/bio">
           <TextUnderLineAnimation text="Harry's Portfolio" />
