@@ -1,0 +1,12 @@
+.textUnderline {
+  text-decoration: none;
+  background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+  background-size: 0 2px;
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.2s linear;
+}
+
+.textUnderline:hover {
+  background-size: 100% 2px
+}
