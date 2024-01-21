@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import TextUnderLineAnimation from "../ui/TextUnderLineAnimation";
 
 export default function Timeline({content}: {content: Array<object>}) {
   return content.map((item: any, index: any) => (
@@ -10,7 +11,7 @@ export default function Timeline({content}: {content: Array<object>}) {
             <span className="text-3xl font-semibold">
               {item.titleLink ? (
                 <a className="" href={item.titleLink} target="_blank">
-                  {item.title}
+                  <TextUnderLineAnimation text={item.title} />
                 </a>
               ) : (
                 item.title
