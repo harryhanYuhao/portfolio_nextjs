@@ -1,12 +1,7 @@
 import type { Metadata } from "next";
-import { SpeedInsights } from "@vercel/speed-insights/next";
-import { Analytics } from "@vercel/analytics/react";
-import GoogleAnalytics from "@/app/components/GoogleAnalytics";
 
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
-import { monserrat } from "@/app/ui/fonts";
-import "@/app/globals.css";
 
 
 export const metadata: Metadata = {
@@ -14,23 +9,14 @@ export const metadata: Metadata = {
     template: "%s | Harry's Profile",
     default: "Harry's Profile",
   },
-  description: "Harry's Personal Profile and Portfolio Website",
-  metadataBase: new URL("https://yhhan.net"),
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body className={`${monserrat.className} `}>
-        <Navbar/>
-        <div className="pt-[5vh] min-h-[100vh] pb-[5vh] flex ">
-          {children}
-        </div>
-        <Footer />
-        <Analytics />
-        <SpeedInsights />
-        <GoogleAnalytics token={`${process.env.GOOGLE_ANALYTICS_TOKEN}`}/>
-      </body>
-    </html>
+    <div>
+      <Navbar />
+      <div className="pt-[5vh] min-h-[100vh] pb-[5vh] flex ">{children}</div>
+      <Footer />
+    </div>
   );
 }
