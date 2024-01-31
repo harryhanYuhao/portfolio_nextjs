@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { Metadata } from "next";
 
-import Title from "../ui/Title";
+import Title from "@/app/ui/Title";
 import profile from "/public/profile.png";
 import content from "./content";
 import Timeline from "./Timeline";

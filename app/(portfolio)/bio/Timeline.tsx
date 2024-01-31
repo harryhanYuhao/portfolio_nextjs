@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import TextUnderLineAnimation from "../ui/TextUnderLineAnimation";
+import TextUnderLineAnimation from "@/app/ui/TextUnderLineAnimation";
 
 export default function Timeline({content}: {content: Array<object>}) {
   return content.map((item: any, index: any) => (

@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
-import GoogleAnalytics from "./components/GoogleAnalytics";
+import GoogleAnalytics from "@/app/components/GoogleAnalytics";
 
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import { monserrat } from "./ui/fonts";
-import "./globals.css";
+import Navbar from "@/app/components/Navbar";
+import Footer from "@/app/components/Footer";
+import { monserrat } from "@/app/ui/fonts";
+import "@/app/globals.css";
 
 
 export const metadata: Metadata = {

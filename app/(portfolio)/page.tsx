@@ -1,5 +1,4 @@
 import Image from "next/image";
-import background from "../public/background.png";
 
 export default function Home() {
   return (
@@ -8,7 +7,7 @@ export default function Home() {
         <div className="w-full lg:w-[50%] lg:px-6 flex justify-center ">
           <Image
             className="h-auto items-center -z-10"
-            src={background}
+            src="/background.png" /* in public folder*/
             alt="background"
             width={600}
             height={600}
@@ -19,11 +18,21 @@ export default function Home() {
             Omnes enim trahimur et ducimur ad cognitionis et scientiae cupiditatem ...
           </h1>
           <h2 className="text-center text-xl pt-2 md:pt-6 md:text-2xl font-medium leading-7 md:leading-[2rem]">
-            All therefore are drawn and led to the desire for knowledge and science ... All of
-            our mental strength will be turned ... to their pursuit.
+            All therefore are drawn and led to the desire for knowledge and science ... All of our
+            mental strength will be turned ... to their pursuit.
             <br />
             <span className="text-base md:text-xl">
-              &mdash; <i><a href="https://en.wikipedia.org/wiki/De_Officiis" className="underline decoration-dotted">On Moral Responsibilities</a>, </i> Cicero
+              &mdash;{" "}
+              <i>
+                <a
+                  href="https://en.wikipedia.org/wiki/De_Officiis"
+                  className="underline decoration-dotted"
+                >
+                  On Moral Responsibilities
+                </a>
+                ,{" "}
+              </i>{" "}
+              Cicero
             </span>
           </h2>
         </div>

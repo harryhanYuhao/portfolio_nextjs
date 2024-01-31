@@ -18,8 +18,8 @@ const bioList = [
     ,
   },
   {
-    title: "System-Nuts",
-    titleLink: null,
+    title: "Systems-Nuts",
+    titleLink: "https://systems-nuts.com",
     subtitle: "Research Internship",
     time: "2023 - Present",
     summary:

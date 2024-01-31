@@ -1,5 +1,5 @@
 import contents from "./contents";
-import ExpandableBox from "../ui/ExpandableBox";
+import ExpandableBox from "@/app/ui/ExpandableBox";
 
 const page = () => {
   return (
