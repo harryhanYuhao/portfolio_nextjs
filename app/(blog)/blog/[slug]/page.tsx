@@ -3,6 +3,8 @@ import Markdown from "markdown-to-jsx";
 import "@/app/(blog)/blog.css";
 import Code from "@/app/(blog)/components/Code";
 
+import blogMap from "@/app/(blog)/blog/[slug]/blogs"
+
 export default function Page({ params }: { params: { slug: string } }) {
   const fs = require("fs");
   const filePath = `content/${params.slug}`;
@@ -31,7 +33,7 @@ export default function Page({ params }: { params: { slug: string } }) {
             },
           }}
         >
-          {str}
+          {blogMap.get(params.slug).content}
         </Markdown>
       </div>
     </div>
