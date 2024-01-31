@@ -1,19 +1,15 @@
-import React from 'react'
-import Markdown from 'react-markdown'
+import React from "react";
 
 const page = () => {
-  const fs = require('fs')
-  const filePath = "content/example.txt"
-  const str = fs.readFileSync(filePath, 'utf8')
-
   return (
-    <div>
-      <Markdown>
-        {str}
-      </Markdown> 
+    <div className="flex flex-row justify-center ">
+      <div className="w-[100vw] text-center">
+        <a href="/blog/os2024.md" className="underline">
+          Dice Set up for OS UoE
+        </a>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default page
-
+export default page;

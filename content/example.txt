@@ -1,7 +1,0 @@
-# This is example
-
-## YES!
-
-AHA
-
-**AHA**
