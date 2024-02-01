@@ -5,54 +5,51 @@
 @layer base {
   h1 {
     font-size: 3rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
   }
    
   h2 {
     font-size: 2rem; 
-    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
   }
 
   h3 {
     font-size: 1.5rem;
+    margin-top: 1.5rem;
     margin-bottom: 1.0rem;
   }
 
   h4 {
-    font-size: 1.2rem;
-    margin-bottom: 0.75rem;
+    font-size: 1.5rem;
+    margin-bottom: 1.0rem;
   }
 
   h5 {
     font-size: 1rem;
-    margin-bottom: 0.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.0rem;
+  }
+
+  code {
+    padding: 0.5rem;
+    background-color: #f1f1f1;
+    overflow: auto;
+  }
+
+  pre > code {
+    padding: unset;
+    overflow: auto;
+    background-color: unset;
   }
 
   .md_paragraph {
     margin-bottom: 0.5rem;
+    font-size: 1.1rem;
   }
 
-  .blog-pre {
-    margin-bottom: 3em !important;
-    -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 35px -23px 2px -16px rgba(0, 0, 0, 0);
-    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 35px -23px 2px -16px rgba(0, 0, 0, 0);
-    position: relative;
+  a {
+    color: #1a202c;
+    text-decoration: underline;
   }
-
-  .code-copy-btn {
-      color: white;
-      position: absolute;
-      right: 10px;
-      top: -2px;
-      font-size: 1.5em;
-      cursor: pointer;
-      transition: all 0.3s ease-in-out;
-  }
-
-  .code-copy-btn:hover {
-      transform: scale(1.1);
-      opacity: 0.9;
-  }
-
-  /* ... */
 }
