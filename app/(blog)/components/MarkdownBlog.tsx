@@ -7,7 +7,7 @@ import "@/app/(blog)/blog.css";
 const MarkdownBlog = ({content}: {content: string}) => {
   return (
     <div className="flex justify-center w-full">
-      <div className="text-left mx-[10vw] w-[80vw]">
+      <div className="text-left mx-[10vw] w-[80vw] lg:w-[60vw]">
         <Markdown
           options={{
             overrides: {

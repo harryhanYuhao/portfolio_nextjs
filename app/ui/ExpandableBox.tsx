@@ -31,13 +31,13 @@ const ExpandableBox = ({
             <div className="flex justify-between w-full">
               <div className="text-start w-[80%]">
                 {" "}
-                <span className="font-semibold">{title}</span>:{" "}
-                <span className="text-sm">{" " + subtitle}</span>
+                <span className="font-semibold text-lg">{title}</span>:{" "}
+                <span className="text-base">{" " + subtitle}</span>
               </div>
               <div>{time}</div>
             </div>
           </AccordionTrigger>
-          <AccordionContent>{description}</AccordionContent>
+          <AccordionContent className="text-base">{description}</AccordionContent>
         </AccordionItem>
         { link && <a href={link} target="_blank" className="absolute -left-10 top-3"><FiLink/></a> }
       </Accordion>

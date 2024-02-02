@@ -3,7 +3,7 @@ import ExpandableBox from "@/app/ui/ExpandableBox";
 
 const page = () => {
   return (
-    <div className="flex flex-col items-center justify-center w-[100vw] transition-all">
+    <div className="flex flex-col items-center justify-start w-[100vw] transition-all">
       {contents.map((content, index) => (
         <ExpandableBox
           key={index}

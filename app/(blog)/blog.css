@@ -52,4 +52,9 @@
     color: #1a202c;
     text-decoration: underline;
   }
+
+  /* reset navbar : link in nav bar shall have no underline*/ 
+  .group {
+    text-decoration: none;
+  }
 }
