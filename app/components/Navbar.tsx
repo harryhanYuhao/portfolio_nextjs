@@ -115,6 +115,7 @@ const Navbar = () => {
           <Logo />
         </motion.div>
       </div>
+      <hr/>
     </div>
   );
 };

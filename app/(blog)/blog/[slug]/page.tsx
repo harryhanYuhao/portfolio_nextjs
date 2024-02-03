@@ -1,11 +1,9 @@
-import Markdown from "markdown-to-jsx";
+import MarkdownBlog from "@/app/(blog)/components/MarkdownBlog";
+import { fetchPost } from "@/lib/data";
 
-import "@/app/(blog)/blog.css";
-import MarkdownCodeBlock from "@/app/(blog)/components/MarkdownCodeBlock";
+export default async function Page({ params }: { params: { slug: string } }) {
 
+  const res = await fetchPost(params.slug) || "404";
 
-export default function Page({ params }: { params: { slug: string } }) {
-  return (
-    <>{params.slug}</>
-  );
+  return <MarkdownBlog content={res} />;
 }
