@@ -1,4 +1,4 @@
-// import { unstable_noStore as noStore } from "next/cache";
+import { unstable_noStore as noStore } from "next/cache";
 
 export async function fetchPost(postName: string) {
   try {
@@ -17,6 +17,7 @@ export async function fetchPost(postName: string) {
 }
 
 export async function fetchPostList() {
+  noStore();
   try {
     const res = await fetch(
       `http://${process.env.VIR_IP}:${process.env.DOWNLOAD_SERVER_PORT}/list/`,
