@@ -9,9 +9,9 @@ async function page() {
     <div className="flex flex-row justify-center ">
       <div className="w-[100vw] text-center">
         {res ? (
-          res.map((post) => {
+          res.map((post, key) => {
             return (
-              <div>
+              <div key={key} className="my-2 text-xl">
               <a href={`/blog/${post}`} className="underline">{post}</a>
               </div>);
           })
