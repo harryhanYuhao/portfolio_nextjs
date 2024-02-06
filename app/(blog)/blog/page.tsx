@@ -10,7 +10,7 @@ function StringNicer(str: string) {
 
 async function page() {
   const res = await fetchPostList();
-  console.log(res);
+  // res is an array of strings holding names of the markdown files
   return (
     <div>
       <div className="w-[100vw] text-center flex flex-col items-center justify-center">
