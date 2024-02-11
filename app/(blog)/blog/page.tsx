@@ -18,7 +18,7 @@ async function page() {
           res.map((post, key) => {
             return (
               <div key={key} className="w-[392px] text-left leading-8 text-lg">
-                <a href={`/blog/${post}`} className="">
+                <a href={`/blog/${post}`} className="no-underline">
                   <TextUnderLineAnimation text={StringNicer(post)} />
                 </a>
               </div>
