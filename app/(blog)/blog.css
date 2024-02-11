@@ -3,28 +3,29 @@
 @tailwind utilities;
 
 @layer base {
-  h1 {
+  .markdown_h1 {
     font-size: 40px;
     padding: 8px, 2px;
   }
    
-  h2 {
+  .markdown_h2 {
+    scroll-margin-top: 8rem;
     font-size: 24px;
     margin: 48px 0 24px;
     padding: 40px 0 0;
   }
 
-  h3 {
+  .markdown_h3 {
     font-size: 20px;
     margin: 32px 0 12px;
   }
 
-  h4 {
+  .markdown_h4 {
     font-size: 1.5rem;
     margin-bottom: 1.0rem;
   }
 
-  h5 {
+  .markdown_h5 {
     font-size: 1rem;
     margin-top: 1.5rem;
     margin-bottom: 1.0rem;
@@ -42,12 +43,12 @@
     background-color: unset;
   }
 
-  h2 + .md_paragraph,
-  h3 + .md_paragraph {
+  .markdown_h2 + .markdown_p,
+  .markdown_h3 + .md_paragraph {
     margin-top: 0;
   }
 
-  .md_paragraph {
+  .markdown_p {
     margin: 20px 0;
     font-size: 18px;
   }

@@ -2,7 +2,7 @@
 import React from "react";
 import TextUnderLineAnimation from "@/app/ui/TextUnderLineAnimation";
 
-export default function Timeline({content}: {content: Array<object>}) {
+export default function Timeline({ content }: { content: Array<object> }) {
   return content.map((item: any, index: any) => (
     <>
       <div key={index} className="hidden lg:flex flex-col justify-center items-center w-full py-5">
@@ -10,7 +10,7 @@ export default function Timeline({content}: {content: Array<object>}) {
           <div className="flex justify-between items-center">
             <span className="text-3xl font-semibold">
               {item.titleLink ? (
-                <a className="" href={item.titleLink} target="_blank">
+                <a className="no-underline" href={item.titleLink} target="_blank">
                   <TextUnderLineAnimation text={item.title} />
                 </a>
               ) : (
