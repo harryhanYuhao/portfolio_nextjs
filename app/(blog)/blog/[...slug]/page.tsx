@@ -20,7 +20,10 @@ function getQueryPath(slug: string) {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // read route params
-  const title = getQueryPath(params.slug).replace(/_/g, " ").replace(/\b\w/g, (l) => l.toUpperCase());
+  const title = getQueryPath(params.slug)
+    .replace(".md", "")
+    .replace(/_/g, " ")
+    .replace(/\b\w/g, (l) => l.toUpperCase());
 
   return {
     title: title,
