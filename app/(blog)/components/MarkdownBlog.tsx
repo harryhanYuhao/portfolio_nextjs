@@ -23,7 +23,7 @@ const MarkdownBlog = ({ content }: { content: string }) => {
             h2: {
               component: "h2",
               props: {
-                className: "scroll-mt-16 markdown_h2",
+                className: "markdown_h2",
               },
             },
             h3: {
